@@ -1,5 +1,6 @@
 <h1>
 	
-	Bonjour {{ $prenom }}
-	Bonjour <?php echo htmlspecialchars($prenom) ?>
+	Bonjour {{ $prenom }},
+	tu es {{ $humeur ?? 'en retard'}}
+
 </h1>
