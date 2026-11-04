@@ -1,0 +1,4 @@
+php -v
+composer create-project laravel/laravel LaravelCSND2627
+php artisan serve
+php artisan make:migration create_dragons_table
