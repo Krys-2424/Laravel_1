@@ -51,4 +51,7 @@ Route::get('/dragons', function() {
 // action Show
 // il existe la méthode find($id) depuis un Model permettant de retrouver le modèle à l'id donné
 
-Route::
+Route::get('/dragons/{id}', function($id) {
+    $dragon = Dragon::findOrFail($id);
+    return view('show', compact('dragon'));
+});
